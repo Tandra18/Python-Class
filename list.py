@@ -1,3 +1,3 @@
 a = ["apple","banana"]
 print(a)
-print()
+print(a)
