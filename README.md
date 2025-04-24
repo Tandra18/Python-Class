@@ -1,2 +1,0 @@
-# Python-Class
-For class
