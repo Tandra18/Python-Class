@@ -5,4 +5,12 @@ a = {"hello",3,5.6,True,1}
 print(a)
 
 # for x in a:
-#     print(x)
+
+# x = "hello"
+# print(isinstance(x,int))
+
+# x = "hello"
+# a = x[1:4]
+# print(a)
+
+
