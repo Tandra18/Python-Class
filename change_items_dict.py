@@ -1,7 +1,7 @@
 info = {
     "name": "Zaw Ye Naung",
     "age": 24,
-    "phone": "09261800607",
+    "phone": "09000000000",
     "address": "yangon"
 }
 

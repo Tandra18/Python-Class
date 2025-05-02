@@ -2,7 +2,8 @@
 info = {
     "name": "Zaw Ye Naung",
     "age": 24,
-    "phone": "09261800607"
+    "age": 45,
+    "phone": "09000000000"
 }
 print(info)
 print(info["age"])
