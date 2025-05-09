@@ -1,7 +1,6 @@
+a = ["apple", "banana", "orange", "kiwi"]
+del a[1:3]
+print(a)
 
 
-set1 = {1, 2, 3, 4}
-set2 = {3, 4, 5, 6}
-result = set1.difference(set2)
-print(result)  # Output: {1, 2}
 

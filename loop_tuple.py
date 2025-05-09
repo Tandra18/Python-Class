@@ -10,5 +10,5 @@
 # basket = ("apple", "banana", "cherry")
 # i = 0
 # while i < len(basket):
-#   print(basket[i])
-#   i = i + 1
+#     print(basket[i])
+#     i = i + 1
