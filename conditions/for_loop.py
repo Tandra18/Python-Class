@@ -23,4 +23,4 @@ fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   if x == "banana":
     continue
-  print(x) #apple, cherry
+  print(x) #apple, cherry,
