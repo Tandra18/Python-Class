@@ -8,8 +8,12 @@ basket = ("apple", "banana", "cherry")
 new_basket = basket * 2
 print(new_basket)
 
-first_apple = new_basket.index("apple")
+basket = ("apple", "banana", "apple", "cherry")
+
+print(basket.count("apple"))
+
+first_apple = basket.index("apple")
 print(f"The index of first apple is {first_apple}")
 
-second_apple = new_basket.index("apple", first_apple+1)
+second_apple = basket.index("apple", first_apple + 1)
 print(f"The index of second apple is {second_apple}")
