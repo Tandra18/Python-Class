@@ -6,8 +6,10 @@ height = float(input("Enter height : "))
 match gender:
     case "M":
         print(f"His name is Mr.{name}.")
-        if 0 < age < 20:
-            print(f"He is {age} years old.And a teenager!")
+        if 0 < age < 10:
+            print(f"He is {age} years old.And a kid!")
+        elif 11 < age < 20:
+            print(f"He is {age} years old.And an teenager!")
         elif 21 < age < 30:
             print(f"He is {age} years old.And an adult!")
         elif 31 < age < 45:
@@ -20,8 +22,10 @@ match gender:
 
     case "F":
         print(f"Her name is Mrs.{name}.")
-        if 0 < age < 20:
-            print(f"She is {age} years old.And a teenager!")
+        if 0 < age < 10:
+            print(f"She is {age} years old.And a kid!")
+        elif 11 < age < 20:
+            print(f"She is {age} years old.And an teenager!")
         elif 21 < age < 30:
             print(f"She is {age} years old.And an adult!")
         elif 31 < age < 45:
