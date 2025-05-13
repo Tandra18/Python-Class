@@ -12,7 +12,7 @@ class Bank:
             self.balance -= w_amount
             print(f"ငွေပမာဏ {w_amount} ကျပ် ထုတ်ယူပါသည်။\n")
         else:
-            print("Insufficient balance!")
+            print("လက်ကျန်ငွေမလုံလောက်ပါ။!\n")
 
     def get_balance(self):
         return self.balance
