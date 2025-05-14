@@ -1,4 +1,4 @@
-info = dict(name = "zaw", age = 36, address = "insein")
+info = dict(name = "zaw", age = 36, phone = "09000000000")
 print(info)
 
 data = [("name", "Aung Aung"), ("age", 25), ("city", "Yangon")]
