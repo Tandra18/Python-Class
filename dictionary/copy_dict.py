@@ -12,19 +12,28 @@
 # print("Modified copy : ", copy)
 # print("Original : ", info)
 #
-
+import  copy
 info = {
     "name": "Zaw Ye Naung",
-    "age": 24
+    "age": 24,
+    "class": {
+        "programming": "Python",
+        "language": "English"
+    }
 }
-copy = info.copy()
-print(copy)
+new_dict = copy.deepcopy(info)
+new_dict["class"]["maths"] = "Stochastics"
+print(f"Original {info}")
+print(f"Copy {new_dict}")
 
-info = {
-    "name": "Zaw Ye Naung",
-    "age": 24
-}
-copy = dict(info)
-print(copy)
 
+
+#
+# info = {
+#     "name": "Zaw Ye Naung",
+#     "age": 24
+# }
+# copy = dict(info)
+# print(copy)
+#
 

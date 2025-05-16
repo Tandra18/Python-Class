@@ -1,4 +1,4 @@
-# x = 21
+# x = 6
 # if x > 10:
 #     print("x is above 10,")
 #     if x > 20:
@@ -15,6 +15,9 @@ a = 33
 b = 200
 
 if b > a:
-  pass
+  print("Hello")
+
+else:
+    print("false")
 
 
