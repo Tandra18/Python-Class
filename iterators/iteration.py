@@ -19,14 +19,17 @@
 # for x in greeting:
 #     print(x)
 
-greeting = "hello"
-it = iter(greeting)
-while True:
-    try:
-        x = next(it)
-        print(x)
-    except StopIteration:
-        break
+
+
+
+# greeting = "hello"
+# it = iter(greeting)
+# while True:
+#     try:
+#         x = next(it)
+#         print(x)
+#     except StopIteration:
+#         break
 
 
 
