@@ -17,13 +17,13 @@
 #     print(i)
 #     i -= 1
 
-# #Sum of digits of a number
-# num = int(input("Enter Number : "))
-# sum_digit = 0
-# while num > 0:
-#     sum_digit += num % 10
-#     num //= 10
-# print("Sum of digits is ", sum_digit)
+#Sum of digits of a number
+num = int(input("Enter Number : "))
+sum_digit = 0
+while num > 0:
+    sum_digit += num % 10
+    num //= 10
+print("Sum of digits is ", sum_digit)
 
 # Guess number
 secret = 7
