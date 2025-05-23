@@ -18,11 +18,14 @@ if prices:
     while True:
         try:
             discount_input = float(input("Enter Discount in % : "))
+
             if 0 < discount_input < 100:
                 discount_percentage = (100 - discount_input) / 100
+
                 for i, discount in enumerate(prices):
                     prices[i] = discount * discount_percentage
-                print(f"Discount Prices are : ")
+                print(f"Promotion Prices are : ")
+
                 for x in prices:
                     print(f"{round(x, 2)} Ks")
                 break
