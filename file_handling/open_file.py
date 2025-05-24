@@ -2,7 +2,7 @@
 # content = file.read()
 # print(content)
 # file.close()
-from dataclasses import field
+
 
 # with open('D:\details.txt','r') as file:
 #     content = file.read()
@@ -42,7 +42,37 @@ from dataclasses import field
 #     print(file.read())
 
 
-with open(r'D:\fruits.txt','a+') as file:
-    file.write("I like apple, banana and orange!")
-    file.seek(0)
-    print(file.read())
+# with open(r'D:\fruits.txt','a+') as file:
+#     file.write("I like apple, banana and orange!")
+#     file.seek(0)
+#     print(file.read())
+#
+
+# import os
+#
+# if os.path.exists(r'D:\details.txt'):
+#     os.remove(r'D:\details.txt')
+#     print("File deleted!")
+# else:
+#     print("File doesn't exist!")
+
+# import os
+#
+# if os.path.exists(r'D:\my folder'):
+#     os.rmdir(r'D:\my folder')
+#     print("Folder deleted!")
+# else:
+#     print("Folder not found!")
+
+import os
+import shutil
+
+if os.path.exists(r'D:\my folder'):
+    shutil.rmtree(r'D:\my folder')
+    print("Folder deleted!")
+else:
+    print("Folder not found!")
+
+os.makedirs(r'D:\my folder')
+print("Folder recreated successfully.")
+
