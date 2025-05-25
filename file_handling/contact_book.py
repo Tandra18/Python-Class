@@ -19,7 +19,7 @@ def add_contact():
         print("\n** You can press 'Enter' to go back to main menu! **")
         name = input("Enter name : ").strip().title()
         if name == '':
-            main()
+            return
 
         while True:
             phone = input("Enter phone : ").strip()
@@ -29,7 +29,7 @@ def add_contact():
             else:
                 print("Phone number must starts with '09' and have 11 digits! ")
             if phone == '':
-                main()
+                return
 
         while True:
             email = input("Enter email : ").lower().strip()
@@ -39,7 +39,7 @@ def add_contact():
             else:
                 print("Please enter a valid email : ")
             if email == '':
-                main()
+                return
 
 
         with open(file_path, 'a', newline='', encoding='utf-8') as file:
@@ -60,15 +60,15 @@ def view_contacts():
     with open(file_path,'r') as file:
         contacts_data = csv.reader(file)
         next(contacts_data)
-        print("\n *** Contact List ***:")
+        print("\n *** Contact List ***")
 
         for i,row in enumerate(contacts_data):
             print(f"Id = {i}  | Name = {row[0]}, Phone = {row[1]}, Email = {row[2]}")
 
     while True:
-        back = input("\nEnter 'esc' to go back to menu : ").lower()
-        if back == 'esc':
-            main()
+        back = input("\nPress 'Enter' to go back to main menu : ").lower()
+        if back == '':
+            return
         else:
             print("Invalid input!")
 
@@ -80,17 +80,22 @@ def main():
         print("2. View contacts")
         print("3. Exit")
 
-        choice = int(input("\nChoose options (1-3) : "))
+        choice = input("\nChoose options (1-3) : ")
 
-        if choice == 1:
-            add_contact()
-        elif choice == 2:
-            view_contacts()
-        elif choice == 3:
-            print("\nGoodbye !")
-            break
-        else:
-            print("Invalid choice. Try again !\n")
+        try:
+            choice = int(choice)
+            if choice == 1:
+                add_contact()
+            elif choice == 2:
+                view_contacts()
+            elif choice == 3:
+                print("\nGoodbye !")
+                break
+            else:
+                print("Invalid choice. Try again !\n")
+        except ValueError:
+            print("\nChoice must be integer only!")
+
 
 if __name__ == '__main__':
     main()
