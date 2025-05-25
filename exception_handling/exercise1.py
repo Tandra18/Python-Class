@@ -24,8 +24,8 @@ if prices:
 
                 for i, discount in enumerate(prices):
                     prices[i] = discount * discount_percentage
-                print(f"Promotion Prices are : ")
 
+                print(f"Promotion Prices are : ")
                 for x in prices:
                     print(f"{round(x, 2)} Ks")
                 break
