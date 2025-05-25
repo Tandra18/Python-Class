@@ -16,7 +16,10 @@ def init_file():
 
 def add_contact():
     while True:
+        print("\n** You can press 'Enter' to go back to main menu! **")
         name = input("Enter name : ").strip().title()
+        if name == '':
+            main()
 
         while True:
             phone = input("Enter phone : ").strip()
@@ -25,6 +28,8 @@ def add_contact():
                 break
             else:
                 print("Phone number must starts with '09' and have 11 digits! ")
+            if phone == '':
+                main()
 
         while True:
             email = input("Enter email : ").lower().strip()
@@ -33,6 +38,8 @@ def add_contact():
                 break
             else:
                 print("Please enter a valid email : ")
+            if email == '':
+                main()
 
 
         with open(file_path, 'a', newline='', encoding='utf-8') as file:
