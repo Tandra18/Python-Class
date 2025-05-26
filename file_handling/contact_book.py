@@ -96,6 +96,4 @@ def main():
         except ValueError:
             print("\nChoice must be integer only!")
 
-
-if __name__ == '__main__':
-    main()
+main()
