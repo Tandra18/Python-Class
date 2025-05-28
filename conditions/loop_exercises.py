@@ -25,13 +25,13 @@ while num > 0:
     num //= 10
 print("Sum of digits is ", sum_digit)
 
-# Guess number
-secret = 7
-guess = int(input("Enter a guess number :"))
-while guess != secret:
-    guess = int(input("Wrong! Try again! : "))
-
-print("Correct!")
+# # Guess number
+# secret = 7
+# guess = int(input("Enter a guess number :"))
+# while guess != secret:
+#     guess = int(input("Wrong! Try again! : "))
+#
+# print("Correct!")
 
 
 

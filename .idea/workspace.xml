@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32ec462-df19-4f38-a47b-721cec2592f4" name="Changes" comment="desktop">
-      <change beforePath="$PROJECT_DIR$/exception_handling/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/temp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_handling/bill_reciept.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handling/bill_reciept.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_handling/contact_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handling/contact_book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphical_user_interface/layouts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conditions/loop_exercises.py" beforeDir="false" afterPath="$PROJECT_DIR$/conditions/loop_exercises.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +54,23 @@
     "Python.Python Class.executor": "Run",
     "Python.audio_file.executor": "Run",
     "Python.bill_reciept.executor": "Run",
+    "Python.check_radio_buttons.executor": "Run",
     "Python.contact_book.executor": "Run",
     "Python.csv_file.executor": "Run",
+    "Python.function.executor": "Run",
     "Python.image_file.executor": "Run",
+    "Python.layouts.executor": "Run",
+    "Python.loop_exercises.executor": "Run",
+    "Python.multiple_line_text_input.executor": "Run",
     "Python.only_play_video.executor": "Run",
     "Python.open_file.executor": "Run",
     "Python.pdf_file.executor": "Run",
+    "Python.person_details.executor": "Run",
+    "Python.radio_button.executor": "Run",
+    "Python.radio_button_burmese.executor": "Run",
+    "Python.single_line_text_input.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.tkinter_window.executor": "Run",
     "Python.video_file.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -65,30 +78,6 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Python-Class" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -144,7 +133,63 @@
       <option name="project" value="LOCAL" />
       <updated>1748210381697</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748274334651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748274334651</updated>
+    </task>
+    <task id="LOCAL-00007" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748274367555</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748274367555</updated>
+    </task>
+    <task id="LOCAL-00008" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748278853166</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748278853166</updated>
+    </task>
+    <task id="LOCAL-00009" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748294199098</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748294199098</updated>
+    </task>
+    <task id="LOCAL-00010" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748294805755</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748294805755</updated>
+    </task>
+    <task id="LOCAL-00011" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748295171176</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1748295171176</updated>
+    </task>
+    <task id="LOCAL-00012" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748300199664</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1748300199664</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

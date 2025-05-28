@@ -1,6 +1,12 @@
-def addition(a, b):
-    return a + b
+# def addition(a, b):
+#     return a + b
+#
+# def subtraction(a, b):
+#     return a - b
 
-result = addition(5, 3)
-print("Result:", result)
+def floor_division(a, b):
+    return a // b
 
+
+floor = floor_division(7, 2)
+# print("Floor division : ", floor)
