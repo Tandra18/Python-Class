@@ -3,5 +3,5 @@ def print_list(fruits):
     for x in fruits:
         print(x)
 
-print_list(["apple", "banana", "cherry"])
+print_list(("apple","banana","cherry"))
 

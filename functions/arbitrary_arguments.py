@@ -1,8 +1,8 @@
-def my_function(*fruits):
-    print(fruits)
-    print("My favorite fruit is ", fruits[1])
-
-my_function("apple", "banana", "cherry")
+# def my_function(*fruits):
+#     print(fruits)
+#     print("My favorite fruit is ", fruits[3])
+#
+# my_function("apple", "banana", "cherry","orange")
 
 
 # def my_function(*fruits):
