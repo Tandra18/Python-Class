@@ -6,5 +6,6 @@ def reverse_string(s):
         return reverse_string(s[1:]) + s[0]
         # recursive case
 
-print(reverse_string("hello"))  # Output: "olleh"
+print(reverse_string(input("Enter a string : ")))  # Output: "olleh"
+
 

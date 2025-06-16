@@ -7,5 +7,5 @@ def fibonacci(n):
         # recursive case
 
 for i in range(10):
-    print(fibonacci(i), end=" ")
+    print(fibonacci(i), end=", ")
 

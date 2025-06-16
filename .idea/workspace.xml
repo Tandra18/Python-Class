@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32ec462-df19-4f38-a47b-721cec2592f4" name="Changes" comment="desktop">
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/combobox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/drawing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/escape_to_exit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/keyboard_binding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/listbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/mouse_binding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphical_user_interface/message_box.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphical_user_interface/slider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphical_user_interface/spinbox.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/arbitrary_arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/arbitrary_arguments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/keyword_arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/keyword_arguments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/list_as_args.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/list_as_args.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/positonal_args.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/positonal_args.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conditions/for_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/conditions/for_loop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/check_prime.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/check_prime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/count_upper_lower.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/count_upper_lower.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/count_vowels.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/count_vowels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/fibonacci.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/recursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/recursion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/reverse_string.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/reverse_string.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda/lambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/lambda.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +63,28 @@
     "Python.audio_file.executor": "Run",
     "Python.bill_reciept.executor": "Run",
     "Python.check_button.executor": "Run",
+    "Python.check_prime.executor": "Run",
     "Python.check_radio_buttons.executor": "Run",
     "Python.combobox.executor": "Run",
     "Python.contact_book.executor": "Run",
+    "Python.count_upper_lower.executor": "Run",
+    "Python.count_vowels.executor": "Run",
     "Python.csv_file.executor": "Run",
     "Python.drawing.executor": "Run",
     "Python.escape_to_exit.executor": "Run",
+    "Python.fibonacci.executor": "Run",
+    "Python.for_loop.executor": "Run",
+    "Python.frame.executor": "Run",
     "Python.function.executor": "Run",
     "Python.image_file.executor": "Run",
     "Python.keyboard_binding.executor": "Run",
     "Python.keyword_arguments.executor": "Run",
+    "Python.lambda.executor": "Run",
     "Python.layouts.executor": "Run",
     "Python.list_as_args.executor": "Run",
     "Python.listbox.executor": "Run",
     "Python.loop_exercises.executor": "Run",
+    "Python.message_box.executor": "Run",
     "Python.mouse_binding.executor": "Run",
     "Python.multiple_line_text_input.executor": "Run",
     "Python.only_play_video.executor": "Run",
@@ -85,7 +94,10 @@
     "Python.positonal_args.executor": "Run",
     "Python.radio_button.executor": "Run",
     "Python.radio_button_burmese.executor": "Run",
+    "Python.recursion.executor": "Run",
+    "Python.reverse_string.executor": "Run",
     "Python.single_line_text_input.executor": "Run",
+    "Python.slider.executor": "Run",
     "Python.test.executor": "Run",
     "Python.tkinter_window.executor": "Run",
     "Python.video_file.executor": "Run",
@@ -214,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748467730542</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="desktop">
+      <option name="closed" value="true" />
+      <created>1748548189075</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748548189075</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
