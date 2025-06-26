@@ -5,6 +5,7 @@ class Sphere:
     def volume(self):
         return (4 / 3) * 3.142 * (self.radius ** 3)
 
-s1 = Sphere(int(input("Enter radius : ")))
-print(s1.volume())
+r = int(input("Enter radius : "))
+s1 = Sphere(r)
+print(f"The volume of a sphere is {s1.volume()}")
 

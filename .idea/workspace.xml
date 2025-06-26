@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32ec462-df19-4f38-a47b-721cec2592f4" name="Changes" comment="desktop">
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/message_box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/slider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/spinbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphical_user_interface/calculator_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphical_user_interface/open_read_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphical_user_interface/write_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conditions/for_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/conditions/for_loop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/check_prime.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/check_prime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/count_upper_lower.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/count_upper_lower.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/count_vowels.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/count_vowels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/fibonacci.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/recursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/recursion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/reverse_string.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/reverse_string.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda/lambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/lambda/lambda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/bank_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/bank_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/function_inside_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/function_inside_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/sphere.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/sphere.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conditions/loop_exercises.py" beforeDir="false" afterPath="$PROJECT_DIR$/conditions/loop_exercises.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +60,13 @@
     "Python.Python Class.executor": "Run",
     "Python.arbitrary_arguments.executor": "Run",
     "Python.audio_file.executor": "Run",
+    "Python.bank_account.executor": "Run",
     "Python.bill_reciept.executor": "Run",
+    "Python.calculator_app.executor": "Run",
     "Python.check_button.executor": "Run",
     "Python.check_prime.executor": "Run",
     "Python.check_radio_buttons.executor": "Run",
+    "Python.class.executor": "Run",
     "Python.combobox.executor": "Run",
     "Python.contact_book.executor": "Run",
     "Python.count_upper_lower.executor": "Run",
@@ -76,6 +78,7 @@
     "Python.for_loop.executor": "Run",
     "Python.frame.executor": "Run",
     "Python.function.executor": "Run",
+    "Python.function_inside_class.executor": "Run",
     "Python.image_file.executor": "Run",
     "Python.keyboard_binding.executor": "Run",
     "Python.keyword_arguments.executor": "Run",
@@ -89,18 +92,22 @@
     "Python.multiple_line_text_input.executor": "Run",
     "Python.only_play_video.executor": "Run",
     "Python.open_file.executor": "Run",
+    "Python.open_read_file.executor": "Run",
     "Python.pdf_file.executor": "Run",
     "Python.person_details.executor": "Run",
     "Python.positonal_args.executor": "Run",
     "Python.radio_button.executor": "Run",
     "Python.radio_button_burmese.executor": "Run",
+    "Python.rectangle.executor": "Run",
     "Python.recursion.executor": "Run",
     "Python.reverse_string.executor": "Run",
     "Python.single_line_text_input.executor": "Run",
     "Python.slider.executor": "Run",
+    "Python.sphere.executor": "Run",
     "Python.test.executor": "Run",
     "Python.tkinter_window.executor": "Run",
     "Python.video_file.executor": "Run",
+    "Python.write_file.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",

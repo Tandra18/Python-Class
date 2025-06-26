@@ -4,11 +4,11 @@
 #     print(f"{num} x {i} = {num * i}")
 
 
-# #Sum of numbers from 1 to 100
-# result = 0
-# for i in range(1, 16):
-#     result += i
-# print("Sum is ",result)
+#Sum of numbers from 1 to 100
+result = 0
+for i in range(1, 16):
+    result += i
+print("Sum is ",result)
 
 
 # #Print number from 10 to 1
@@ -17,13 +17,13 @@
 #     print(i)
 #     i -= 1
 
-#Sum of digits of a number
-num = int(input("Enter Number : "))
-sum_digit = 0
-while num > 0:
-    sum_digit += num % 10
-    num //= 10
-print("Sum of digits is ", sum_digit)
+# #Sum of digits of a number
+# num = int(input("Enter Number : "))
+# sum_digit = 0
+# while num > 0:
+#     sum_digit += num % 10
+#     num //= 10
+# print("Sum of digits is ", sum_digit)
 
 # # Guess number
 # secret = 7
