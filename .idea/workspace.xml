@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c32ec462-df19-4f38-a47b-721cec2592f4" name="Changes" comment="desktop">
-      <change afterPath="$PROJECT_DIR$/python_project/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_project/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_project/delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_project/export_pdf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_project/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_project/update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python_project/upload_photo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c32ec462-df19-4f38-a47b-721cec2592f4" name="Changes" comment="updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exception_handling/enumerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/enumerate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exception_handling/exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/exception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exception_handling/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/exercise1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exception_handling/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/exercise2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_handling/open_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handling/open_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/palindrome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inheritance/multiple_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/inheritance/multiple_inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/built_in_datetime.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/built_in_datetime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polymorphism/class_polymorphism.py" beforeDir="false" afterPath="$PROJECT_DIR$/polymorphism/class_polymorphism.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_expression/exercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/exercise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_expression/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_expression/split.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/split.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regular_expression/substitute.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/substitute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scope/enclosing_scope.py" beforeDir="false" afterPath="$PROJECT_DIR$/scope/enclosing_scope.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_project/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,80 +44,81 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python..executor": "Run",
-    "Python.Python Class.executor": "Run",
-    "Python.arbitrary_arguments.executor": "Run",
-    "Python.audio_file.executor": "Run",
-    "Python.bank_account.executor": "Run",
-    "Python.bill_reciept.executor": "Run",
-    "Python.calculator_app.executor": "Run",
-    "Python.check_button.executor": "Run",
-    "Python.check_prime.executor": "Run",
-    "Python.check_radio_buttons.executor": "Run",
-    "Python.class.executor": "Run",
-    "Python.class_polymorphism.executor": "Run",
-    "Python.combobox.executor": "Run",
-    "Python.contact_book.executor": "Run",
-    "Python.count_upper_lower.executor": "Run",
-    "Python.count_vowels.executor": "Run",
-    "Python.csv_file.executor": "Run",
-    "Python.drawing.executor": "Run",
-    "Python.enclosing_scope.executor": "Run",
-    "Python.enumerate.executor": "Run",
-    "Python.escape_to_exit.executor": "Run",
-    "Python.exception.executor": "Run",
-    "Python.exercise.executor": "Run",
-    "Python.exercise1.executor": "Run",
-    "Python.exercise2.executor": "Run",
-    "Python.fibonacci.executor": "Run",
-    "Python.findall.executor": "Run",
-    "Python.for_loop.executor": "Run",
-    "Python.frame.executor": "Run",
-    "Python.function.executor": "Run",
-    "Python.function_inside_class.executor": "Run",
-    "Python.image_file.executor": "Run",
-    "Python.keyboard_binding.executor": "Run",
-    "Python.keyword_arguments.executor": "Run",
-    "Python.lambda.executor": "Run",
-    "Python.layouts.executor": "Run",
-    "Python.list_as_args.executor": "Run",
-    "Python.listbox.executor": "Run",
-    "Python.loop_exercises.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.message_box.executor": "Run",
-    "Python.mouse_binding.executor": "Run",
-    "Python.multiple_line_text_input.executor": "Run",
-    "Python.only_play_video.executor": "Run",
-    "Python.open_file.executor": "Run",
-    "Python.open_read_file.executor": "Run",
-    "Python.pdf_file.executor": "Run",
-    "Python.person_details.executor": "Run",
-    "Python.positonal_args.executor": "Run",
-    "Python.python_project.executor": "Run",
-    "Python.radio_button.executor": "Run",
-    "Python.radio_button_burmese.executor": "Run",
-    "Python.rectangle.executor": "Run",
-    "Python.recursion.executor": "Run",
-    "Python.reverse_string.executor": "Run",
-    "Python.search.executor": "Run",
-    "Python.single_line_text_input.executor": "Run",
-    "Python.slider.executor": "Run",
-    "Python.sphere.executor": "Run",
-    "Python.split.executor": "Run",
-    "Python.substitute.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.tkinter_window.executor": "Run",
-    "Python.video_file.executor": "Run",
-    "Python.write_file.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python..executor&quot;: &quot;Run&quot;,
+    &quot;Python.Python Class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.arbitrary_arguments.executor&quot;: &quot;Run&quot;,
+    &quot;Python.audio_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bank_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bill_reciept.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calculator_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check_button.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check_prime.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check_radio_buttons.executor&quot;: &quot;Run&quot;,
+    &quot;Python.class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.class_polymorphism.executor&quot;: &quot;Run&quot;,
+    &quot;Python.combobox.executor&quot;: &quot;Run&quot;,
+    &quot;Python.contact_book.executor&quot;: &quot;Run&quot;,
+    &quot;Python.count_upper_lower.executor&quot;: &quot;Run&quot;,
+    &quot;Python.count_vowels.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csv_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.drawing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enclosing_scope.executor&quot;: &quot;Run&quot;,
+    &quot;Python.enumerate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.escape_to_exit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exception.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercise.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercise1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercise2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Python.findall.executor&quot;: &quot;Run&quot;,
+    &quot;Python.for_loop.executor&quot;: &quot;Run&quot;,
+    &quot;Python.frame.executor&quot;: &quot;Run&quot;,
+    &quot;Python.function.executor&quot;: &quot;Run&quot;,
+    &quot;Python.function_inside_class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.image_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.keyboard_binding.executor&quot;: &quot;Run&quot;,
+    &quot;Python.keyword_arguments.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lambda.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layouts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.list_as_args.executor&quot;: &quot;Run&quot;,
+    &quot;Python.listbox.executor&quot;: &quot;Run&quot;,
+    &quot;Python.loop_exercises.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.message_box.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mouse_binding.executor&quot;: &quot;Run&quot;,
+    &quot;Python.multiple_line_text_input.executor&quot;: &quot;Run&quot;,
+    &quot;Python.only_play_video.executor&quot;: &quot;Run&quot;,
+    &quot;Python.open_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.open_read_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pdf_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.person_details.executor&quot;: &quot;Run&quot;,
+    &quot;Python.positonal_args.executor&quot;: &quot;Run&quot;,
+    &quot;Python.python_project.executor&quot;: &quot;Run&quot;,
+    &quot;Python.radio_button.executor&quot;: &quot;Run&quot;,
+    &quot;Python.radio_button_burmese.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rectangle.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recursion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reverse_string.executor&quot;: &quot;Run&quot;,
+    &quot;Python.search.executor&quot;: &quot;Run&quot;,
+    &quot;Python.single_line_text_input.executor&quot;: &quot;Run&quot;,
+    &quot;Python.slider.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sphere.executor&quot;: &quot;Run&quot;,
+    &quot;Python.split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.substitute.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tkinter_window.executor&quot;: &quot;Run&quot;,
+    &quot;Python.video_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.write_file.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -267,11 +246,20 @@
       <option name="project" value="LOCAL" />
       <updated>1748548189075</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updated">
+      <option name="closed" value="true" />
+      <created>1753635535348</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1753635535348</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="desktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="desktop" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
 </project>
