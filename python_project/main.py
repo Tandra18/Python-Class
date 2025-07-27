@@ -134,32 +134,53 @@ ttk.Button(search_frame, text="Show All", command=view_all).pack(side=LEFT)
 main_frame = ttk.Frame(root, padding=10)
 main_frame.pack(fill=BOTH, expand=True)
 
-# --- Form Frame ---
+# Configure grid weights for resizing behavior
+main_frame.columnconfigure(0, weight=3)  # Form frame wider
+main_frame.columnconfigure(1, weight=2)  # List frame medium width
+main_frame.rowconfigure(0, weight=1)
+
+# --- Form Frame with Photo inside ---
 form_frame = ttk.LabelFrame(main_frame, text="Employee Information", padding=10)
 form_frame.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
 
+# Configure columns for form frame: left fields and right photo
+form_frame.columnconfigure(0, weight=3)
+form_frame.columnconfigure(1, weight=3)
+form_frame.columnconfigure(2, weight=1)
+
+# Clear previous widgets if any (useful if code runs multiple times)
+for widget in form_frame.winfo_children():
+    widget.grid_forget()
+
+# Place fields at left columns 0 (labels) and 1 (inputs) starting from row=0
 row_idx = 0
 for label, var in fields.items():
-    ttk.Label(form_frame, text=label + ":").grid(row=row_idx, column=0, sticky=W, pady=5)
+    ttk.Label(form_frame, text=label + ":").grid(row=row_idx, column=0, sticky=W, pady=5, padx=(0,10))
     if label in ["Sex", "Marital Status", "Blood Type"]:
         options = sex_options if label == "Sex" else marital_options if label == "Marital Status" else blood_options
-        ttk.Combobox(form_frame, textvariable=var, values=options, width=27, state="readonly").grid(row=row_idx, column=1)
+        ttk.Combobox(form_frame, textvariable=var, values=options, width=27, state="readonly").grid(row=row_idx, column=1, sticky=W)
     elif label == "Employee ID":
-        ttk.Entry(form_frame, textvariable=var, width=30, state="readonly").grid(row=row_idx, column=1)
+        ttk.Entry(form_frame, textvariable=var, width=30, state="readonly").grid(row=row_idx, column=1, sticky=W)
     else:
-        ttk.Entry(form_frame, textvariable=var, width=30).grid(row=row_idx, column=1)
+        ttk.Entry(form_frame, textvariable=var, width=30).grid(row=row_idx, column=1, sticky=W)
     row_idx += 1
 
-# --- Photo Frame ---
-photo_frame = ttk.LabelFrame(main_frame, text="Photo", padding=10)
-photo_frame.grid(row=0, column=1, sticky="n", padx=10, pady=10)
-
-photo_label = Label(photo_frame, bg="white", width=80, height=100, relief=SOLID, bd=1)
-photo_label.pack()
+# Photo Label in column 2, row 0
+photo_label = Label(form_frame, bg="white", width=80, height=100, relief=SOLID, bd=1)
+photo_label.grid(row=0, column=2, sticky=N, padx=(10,0), pady=(0,5))
 photo_label.configure(image=blank_tk)
 photo_label.img = blank_tk
 
-ttk.Button(photo_frame, text="Load Photo", command=lambda: set_photo(load_photo(photo_label))).pack(pady=5)
+# Load photo button in column 2, row 1 (directly below photo)
+ttk.Button(form_frame, text="Load Photo", command=lambda: set_photo(load_photo(photo_label))).grid(row=1, column=2, sticky=N, padx=(10,0))
+
+# --- Listbox Frame ---
+list_frame = ttk.LabelFrame(main_frame, text="Employee List", padding=10)
+list_frame.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
+
+listbox = Listbox(list_frame, font=("Segoe UI", 10), width=40, height=20)
+listbox.pack(fill=BOTH, expand=True)
+listbox.bind("<<ListboxSelect>>", load_selected)
 
 # --- Buttons ---
 btn_frame = ttk.Frame(main_frame, padding=10)
@@ -173,14 +194,6 @@ ttk.Button(btn_frame, text="Delete", width=15,
            command=lambda: delete_employee(cur, conn, selected_id, clear_fields, view_all)).grid(row=0, column=2, padx=5)
 ttk.Button(btn_frame, text="Export PDF", width=15,
            command=lambda: export_pdf(cur)).grid(row=0, column=3, padx=5)
-
-# --- Listbox Frame ---
-list_frame = ttk.LabelFrame(root, text="Employee List", padding=10)
-list_frame.pack(fill=BOTH, expand=True, padx=10, pady=10)
-
-listbox = Listbox(list_frame, font=("Segoe UI", 10), width=90, height=8)
-listbox.pack(fill=BOTH, expand=True)
-listbox.bind("<<ListboxSelect>>", load_selected)
 
 view_all()
 root.mainloop()
