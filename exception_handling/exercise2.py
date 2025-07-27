@@ -4,7 +4,7 @@ import random
 def guessing_game():
     print("Guess any number from 1 to 10\n"
           "You have 5 attempts!")
-    secret_number = random.randint(1, 11)
+    secret_number = random.randint(1,11)
     attempts = 5
 
     while True:
@@ -15,7 +15,7 @@ def guessing_game():
                 print("\nGuess number must be between 1 to 10\n")
                 continue
 
-            elif attempts < 2:
+            elif attempts == 1:
                 print("💀Game Over! Too much attempts! ")
                 break
 

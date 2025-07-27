@@ -23,18 +23,19 @@
 # c = Child()
 # c.my_skills()
 
-# #Method overriding
-# class A:
-#     def show(self):
-#         print("This is A!")
-#
-# class B:
-#     def show(self):
-#         print("This is B!")
-#
-# class C(B,A):
-#     pass
-#
-# result = C()
-# result.show()
+
+#Method overriding
+class A:
+    def show(self):
+        print("This is A!")
+
+class B:
+    def show(self):
+        print("This is B!")
+
+class C(B,A):
+    pass
+
+result = C()
+result.show()
 

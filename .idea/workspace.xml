@@ -5,16 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c32ec462-df19-4f38-a47b-721cec2592f4" name="Changes" comment="desktop">
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/calculator_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/open_read_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphical_user_interface/write_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_project/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_project/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_project/delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_project/export_pdf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_project/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_project/update.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_project/upload_photo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/bank_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/bank_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/function_inside_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/function_inside_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/rectangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/sphere.py" beforeDir="false" afterPath="$PROJECT_DIR$/class/sphere.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conditions/loop_exercises.py" beforeDir="false" afterPath="$PROJECT_DIR$/conditions/loop_exercises.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception_handling/enumerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/enumerate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception_handling/exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/exception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception_handling/exercise1.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/exercise1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception_handling/exercise2.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception_handling/exercise2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_handling/open_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handling/open_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/palindrome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inheritance/multiple_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/inheritance/multiple_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/built_in_datetime.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/built_in_datetime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polymorphism/class_polymorphism.py" beforeDir="false" afterPath="$PROJECT_DIR$/polymorphism/class_polymorphism.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regular_expression/exercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/exercise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regular_expression/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regular_expression/split.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regular_expression/substitute.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_expression/substitute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scope/enclosing_scope.py" beforeDir="false" afterPath="$PROJECT_DIR$/scope/enclosing_scope.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +54,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Tandra18/Python-Class.git&quot;,
-    &quot;accountId&quot;: &quot;b02e0f64-4cef-4daa-855d-8e5f2325ec32&quot;
+    &quot;accountId&quot;: &quot;0ce59665-5e88-4935-ae38-e18e631728e3&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -67,14 +80,22 @@
     "Python.check_prime.executor": "Run",
     "Python.check_radio_buttons.executor": "Run",
     "Python.class.executor": "Run",
+    "Python.class_polymorphism.executor": "Run",
     "Python.combobox.executor": "Run",
     "Python.contact_book.executor": "Run",
     "Python.count_upper_lower.executor": "Run",
     "Python.count_vowels.executor": "Run",
     "Python.csv_file.executor": "Run",
     "Python.drawing.executor": "Run",
+    "Python.enclosing_scope.executor": "Run",
+    "Python.enumerate.executor": "Run",
     "Python.escape_to_exit.executor": "Run",
+    "Python.exception.executor": "Run",
+    "Python.exercise.executor": "Run",
+    "Python.exercise1.executor": "Run",
+    "Python.exercise2.executor": "Run",
     "Python.fibonacci.executor": "Run",
+    "Python.findall.executor": "Run",
     "Python.for_loop.executor": "Run",
     "Python.frame.executor": "Run",
     "Python.function.executor": "Run",
@@ -87,6 +108,7 @@
     "Python.list_as_args.executor": "Run",
     "Python.listbox.executor": "Run",
     "Python.loop_exercises.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.message_box.executor": "Run",
     "Python.mouse_binding.executor": "Run",
     "Python.multiple_line_text_input.executor": "Run",
@@ -96,14 +118,18 @@
     "Python.pdf_file.executor": "Run",
     "Python.person_details.executor": "Run",
     "Python.positonal_args.executor": "Run",
+    "Python.python_project.executor": "Run",
     "Python.radio_button.executor": "Run",
     "Python.radio_button_burmese.executor": "Run",
     "Python.rectangle.executor": "Run",
     "Python.recursion.executor": "Run",
     "Python.reverse_string.executor": "Run",
+    "Python.search.executor": "Run",
     "Python.single_line_text_input.executor": "Run",
     "Python.slider.executor": "Run",
     "Python.sphere.executor": "Run",
+    "Python.split.executor": "Run",
+    "Python.substitute.executor": "Run",
     "Python.test.executor": "Run",
     "Python.tkinter_window.executor": "Run",
     "Python.video_file.executor": "Run",
@@ -111,7 +137,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SharedIndexes">

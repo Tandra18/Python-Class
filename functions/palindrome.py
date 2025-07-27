@@ -1,11 +1,11 @@
 def palindrome(s):
     if len(s) <= 1:
-        return True  # base case
+        return "It is palindrome!"  # base case
     elif s[0] != s[-1]:
-        return False
+        return "It is not a palindrome"
     else:
         return palindrome(s[1:-1])  # recursive case
 
-print(palindrome("madam"))   # Output: True
-print(palindrome("hello"))   # Output: False
+result = input("Enter a string : ")
+print(palindrome(result))
 

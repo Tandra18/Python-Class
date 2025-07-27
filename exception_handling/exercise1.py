@@ -13,8 +13,8 @@ if prices:
     print("\nOriginal Prices Are : ")
     for x in prices:
         print(f"{x} Ks")
-    print(f"Enumerated Original Prices : {list(enumerate(prices))} \n")
-
+    print(f"Enumerated Original Prices : {list(enumerate(prices,start=1))} \n")
+    # list(enumerate(prices))
     while True:
         try:
             discount_input = float(input("Enter Discount in % : "))
@@ -35,4 +35,4 @@ if prices:
             print("Invalid Discount Input! Enter a number")
 
 else:
-    print("\n No Prices were entered!")
+    print("\nNo Prices were entered!")
