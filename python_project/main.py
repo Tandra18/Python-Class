@@ -1,14 +1,13 @@
 from tkinter import *
 from tkinter import messagebox, ttk
 from PIL import Image as PilImage, ImageTk
-from db import get_connection
+from python_project.database.db import get_connection
 from upload_photo import load_photo
-from create import create_employee
-from update import update_employee
-from delete import delete_employee
+from python_project.create.create_employee import create_employee
+from python_project.update.update_employee import update_employee
+from python_project.delete.delete_employee import delete_employee
 from export_pdf import export_pdf
 import io
-from datetime import datetime
 
 # Database setup
 conn = get_connection()
@@ -195,5 +194,8 @@ ttk.Button(btn_frame, text="Delete", width=15,
 ttk.Button(btn_frame, text="Export PDF", width=15,
            command=lambda: export_pdf(cur)).grid(row=0, column=3, padx=5)
 
-view_all()
-root.mainloop()
+
+
+if __name__ == "__main__":
+    view_all()
+    root.mainloop()
