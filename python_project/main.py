@@ -8,6 +8,8 @@ from python_project.update.update_employee import update_employee
 from python_project.delete.delete_employee import delete_employee
 from export_pdf import export_pdf
 import io
+import re
+from datetime import datetime
 
 # Database setup
 conn = get_connection()
@@ -24,6 +26,7 @@ style.configure("TLabel", font=("Segoe UI", 10))
 style.configure("TButton", font=("Segoe UI", 10))
 style.configure("TEntry", font=("Segoe UI", 10))
 style.configure("TCombobox", font=("Segoe UI", 10))
+style.configure("Treeview.Heading", font=("Segoe UI", 10, "bold"))
 
 # Data Fields
 fields = {
@@ -51,32 +54,74 @@ selected_id = None
 blank_img = PilImage.new("RGB", (80, 100), color="white")
 blank_tk = ImageTk.PhotoImage(blank_img)
 
+# --- Validation Function ---
+def validate_fields():
+    name = fields["Name"].get().strip()
+    age = fields["Age"].get().strip()
+    dob = fields["DOB"].get().strip()
+    phone = fields["Phone"].get().strip()
+    email = fields["Email"].get().strip()
+
+    if not all(v.get().strip() for k, v in fields.items() if k != "Employee ID"):
+        messagebox.showerror("Validation Error", "All fields must be filled.")
+        return False
+
+    if not photo_data:
+        messagebox.showerror("Validation Error", "Photo is required.")
+        return False
+
+    if not age.isdigit():
+        messagebox.showerror("Validation Error", "Age must be a number.")
+        return False
+
+    if not re.match(r"^\d{2}[-./]\d{2}[-./]\d{4}$", dob):
+        messagebox.showerror("Validation Error", "DOB must be in format dd.mm.yyyy, dd-mm-yyyy, or dd/mm/yyyy.")
+        return False
+
+    if not re.match(r"^09\d{9}$", phone):
+        messagebox.showerror("Validation Error", "Phone must start with 09 and be 11 digits long.")
+        return False
+
+    if not re.match(r"^[\w\.-]+@[\w\.-]+\.\w+$", email):
+        messagebox.showerror("Validation Error", "Invalid email format.")
+        return False
+
+    return True
+
 # Functions
 def view_all():
-    listbox.delete(0, END)
+    for row in tree.get_children():
+        tree.delete(row)
     cur.execute("SELECT employee_id, name FROM employees ORDER BY employee_id")
     for row in cur.fetchall():
-        listbox.insert(END, f"{row[0]} - {row[1]}")
+        tree.insert("", "end", values=(row[0], row[1]))
 
 def search_by_name():
     name_query = search_var.get().strip()
+    for row in tree.get_children():
+        tree.delete(row)
+
     if name_query == "":
         view_all()
         return
-    listbox.delete(0, END)
+
     cur.execute("SELECT employee_id, name FROM employees WHERE name ILIKE %s", (f"%{name_query}%",))
     results = cur.fetchall()
     if results:
         for row in results:
-            listbox.insert(END, f"{row[0]} - {row[1]}")
+            tree.insert("", "end", values=(row[0], row[1]))
     else:
         messagebox.showinfo("No Results", f"No employee found with name '{name_query}'.")
 
 def load_selected(event):
     global selected_id, photo_data
-    if not listbox.curselection():
+    selected = tree.focus()
+    if not selected:
         return
-    emp_id = int(listbox.get(listbox.curselection()).split(" - ")[0])
+    values = tree.item(selected, "values")
+    if not values:
+        return
+    emp_id = int(values[0])
     selected_id = emp_id
     cur.execute("SELECT * FROM employees WHERE employee_id = %s", (emp_id,))
     row = cur.fetchone()
@@ -119,7 +164,7 @@ def set_photo(data):
 title_label = Label(root, text="Employee Manager", font=("Segoe UI", 18, "bold"), bg="#f0f4f7", fg="#333")
 title_label.pack(pady=10)
 
-# --- Search Box ---
+# Search Box
 search_frame = ttk.Frame(root, padding=(10, 5))
 search_frame.pack(fill=X, padx=10)
 
@@ -129,29 +174,21 @@ ttk.Entry(search_frame, textvariable=search_var, width=30).pack(side=LEFT)
 ttk.Button(search_frame, text="Search", command=search_by_name).pack(side=LEFT, padx=(5, 10))
 ttk.Button(search_frame, text="Show All", command=view_all).pack(side=LEFT)
 
-# --- Main Layout ---
+# Main Layout
 main_frame = ttk.Frame(root, padding=10)
 main_frame.pack(fill=BOTH, expand=True)
-
-# Configure grid weights for resizing behavior
-main_frame.columnconfigure(0, weight=3)  # Form frame wider
-main_frame.columnconfigure(1, weight=2)  # List frame medium width
+main_frame.columnconfigure(0, weight=3)
+main_frame.columnconfigure(1, weight=2)
 main_frame.rowconfigure(0, weight=1)
 
-# --- Form Frame with Photo inside ---
+# Form Frame
 form_frame = ttk.LabelFrame(main_frame, text="Employee Information", padding=10)
 form_frame.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
-
-# Configure columns for form frame: left fields and right photo
 form_frame.columnconfigure(0, weight=3)
 form_frame.columnconfigure(1, weight=3)
 form_frame.columnconfigure(2, weight=1)
 
-# Clear previous widgets if any (useful if code runs multiple times)
-for widget in form_frame.winfo_children():
-    widget.grid_forget()
-
-# Place fields at left columns 0 (labels) and 1 (inputs) starting from row=0
+# Form Fields
 row_idx = 0
 for label, var in fields.items():
     ttk.Label(form_frame, text=label + ":").grid(row=row_idx, column=0, sticky=W, pady=5, padx=(0,10))
@@ -164,37 +201,44 @@ for label, var in fields.items():
         ttk.Entry(form_frame, textvariable=var, width=30).grid(row=row_idx, column=1, sticky=W)
     row_idx += 1
 
-# Photo Label in column 2, row 0
+# Photo section
 photo_label = Label(form_frame, bg="white", width=80, height=100, relief=SOLID, bd=1)
 photo_label.grid(row=0, column=2, sticky=N, padx=(10,0), pady=(0,5))
 photo_label.configure(image=blank_tk)
 photo_label.img = blank_tk
 
-# Load photo button in column 2, row 1 (directly below photo)
 ttk.Button(form_frame, text="Load Photo", command=lambda: set_photo(load_photo(photo_label))).grid(row=1, column=2, sticky=N, padx=(10,0))
 
-# --- Listbox Frame ---
-list_frame = ttk.LabelFrame(main_frame, text="Employee List", padding=10)
-list_frame.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
+# Treeview Frame (Replaces Listbox)
+tree_frame = ttk.LabelFrame(main_frame, text="Employee List", padding=10)
+tree_frame.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
 
-listbox = Listbox(list_frame, font=("Segoe UI", 10), width=40, height=20)
-listbox.pack(fill=BOTH, expand=True)
-listbox.bind("<<ListboxSelect>>", load_selected)
+tree = ttk.Treeview(tree_frame, columns=("ID", "Name"), show="headings", height=20)
+tree.heading("ID", text="ID")
+tree.heading("Name", text="Name")
+tree.column("ID", width=50, anchor="center")
+tree.column("Name", width=180)
+tree.pack(fill=BOTH, expand=True)
+tree.bind("<<TreeviewSelect>>", load_selected)
 
-# --- Buttons ---
+# Buttons Frame
 btn_frame = ttk.Frame(main_frame, padding=10)
 btn_frame.grid(row=1, column=0, columnspan=2)
 
 ttk.Button(btn_frame, text="Create", width=15,
-           command=lambda: create_employee(cur, conn, fields, photo_data, clear_fields, view_all)).grid(row=0, column=0, padx=5)
+           command=lambda: create_employee(cur, conn, fields, photo_data, clear_fields, view_all) if validate_fields() else None).grid(row=0, column=0, padx=5)
+
 ttk.Button(btn_frame, text="Update", width=15,
-           command=lambda: update_employee(cur, conn, selected_id, fields, photo_data, clear_fields, view_all)).grid(row=0, column=1, padx=5)
+           command=lambda: update_employee(cur, conn, selected_id, fields, photo_data, clear_fields, view_all) if validate_fields() else None).grid(row=0, column=1, padx=5)
+
 ttk.Button(btn_frame, text="Delete", width=15,
            command=lambda: delete_employee(cur, conn, selected_id, clear_fields, view_all)).grid(row=0, column=2, padx=5)
+
 ttk.Button(btn_frame, text="Export PDF", width=15,
            command=lambda: export_pdf(cur)).grid(row=0, column=3, padx=5)
 
-
+ttk.Button(btn_frame, text="Clear Fields", width=15,
+           command=clear_fields).grid(row=0, column=4, padx=5)
 
 if __name__ == "__main__":
     view_all()

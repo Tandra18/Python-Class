@@ -8,3 +8,5 @@ with open(r'D:\apple.jpg','rb') as img_file:
 image = Image.open(io.BytesIO(img_data))
 image.show()
 
+
+

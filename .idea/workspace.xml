@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c32ec462-df19-4f38-a47b-721cec2592f4" name="Changes" comment="updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_project/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_project/create/create_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_project/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_project/database/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_project/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_project/delete/delete_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_handling/image_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_handling/image_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/export_pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_project/export_pdf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_project/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_project/update.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_project/update/update_employee.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
