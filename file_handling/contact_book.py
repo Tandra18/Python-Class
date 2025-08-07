@@ -1,7 +1,5 @@
 import csv
 import re
-import tkinter as tk
-
 file_path = r'D:\contacts.csv'
 
 def init_file():
@@ -63,7 +61,7 @@ def view_contacts():
         print("\n *** Contact List ***")
 
         for i,row in enumerate(contacts_data):
-            print(f"Id = {i}  | Name = {row[0]}, Phone = {row[1]}, Email = {row[2]}")
+            print(f"Id = {i+1}  | Name = {row[0]}, Phone = {row[1]}, Email = {row[2]}")
 
     while True:
         back = input("\nPress 'Enter' to go back to main menu : ").lower()

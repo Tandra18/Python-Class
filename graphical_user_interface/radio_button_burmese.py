@@ -4,7 +4,7 @@ root = tk.Tk()
 root.title("Radio Button")
 root.geometry("600x450")
 
-myanmar_font = ("Pyidaungsu", 15)#("font_name",font_size)
+myanmar_font = ("Pyidaungsu", 15) #("font_name",font_size)
 
 def show_choice():
     label.config(text=f"သင် '{choice.get()}' ကိုရွေးချယ်ခဲ့ပါတယ်။"
